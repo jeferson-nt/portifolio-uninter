@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Configurações iniciais -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Links de conexão com o serviço do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Adição da fonte 'Roboto' do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Importação do CDN de estilização do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  
+  <!-- Importação das estilizações 'internas' -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Definição do título -->
+  <title>Portfólio - Jeferson Nunes Teixeira</title>
+</head>
+<body>
+  <!-- Construção de uma nova seção com a classe 'top-bar' -->
+  <section class="top-bar">
+    <div class="container">
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro -->
+      <div class="row justify-content-between m-0 w-100">
+        <div class="col-lg-12 p-0">
+          <!-- Construção de uma 'nav', responsável por agrupar o conteúdo do header  -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Construção de um 'link', que direciona para a página principal dessa aplicação  -->
+            <a class="navbar-brand" href="index.html">
+              Jeferson
+            </a>
+
+            <!-- Construção de um 'button', responsável por exibir o menu mobile  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
+            >
+              <!-- Exibição de um ícone para a abertura do menu mobile -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Construção de uma 'div' que abriga todos os links presente no header -->
+            <div id="navbarToggleExternalContent" class="collapse navbar-collapse text-end">
+              <ul class="navbar-nav ml-auto">
+                <!-- Construção do 'link' Sobre mim do menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre mim</a>
+                </li>
+                <!-- Construção do 'link' Experiência do menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experiência</a>
+                </li>
+                <!-- Construção do 'link' Educação do menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#education">Educação</a>
+                </li>
+                <!-- Construção do 'link' Portfólio do menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfólio</a>
+                </li>
+                <!-- Construção do 'link' Contato do menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'hero-area', que apresenta um pouco sobre o autor -->
+  <section class="hero-area">
+    <div class="container">
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro através da classe 'row'-->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <!-- Construção de uma 'div', adicionando a classe 'block' a ela -->
+          <div class="block">
+            <section class="cd-intro">
+              <!-- Construção de um 'heading', responsável por apresentar o nome e posição trabalhista -->
+              <h1 class="cd-headline">
+                <span>
+                  Olá, meu nome é Jeferson Teixeira &amp; Eu sou um</span><br>
+                <span class="cd-words-wrapper">
+                  <b>Analista de Suporte</b>
+                </span>
+              </h1>
+            </section>
+            <!-- Construção de um 'heading', responsável por convidar o leitor a conhecer mais sobre o autor -->
+            <h2>Aproveite e conheça um pouco de mim, neste meu portfólio.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'about', que apresenta um breve resumo sobre a vida do autor -->
+  <section class="about" id="about">
+    <div class="container">
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro através da classe 'row' -->
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <!-- Construção de uma 'div', adicionando a classe 'block' a ela -->
+          <div class="block"> 
+            <!-- Título da seção -->
+            <h2>
+              Sobre mim
+            </h2>
+            <!-- Breve resumo sobre o autor -->
+            <p>
+              Possuo formação técnica em eletrônica a 13 anos, tendo amplo conhecimento nessa área. Nos últimos 9 anos, trabalhei com atendimentos externos em clientes em nível nacional, atuando em trabalhos em equipe, sempre visando manter uma relação tanto com cliente como os colegas de trabalho com caráter, respeito e confiança.
+            </p>
+            <!-- Complemento resumo sobre o autor -->
+            <p>
+              Sempre fui apaixonado pela tecnologia desde a adolescência ,tanto pela parte de software como hardware, com isso em 2021 ingressei no curso de Análise e Desenvolvimento de Sistema
+            </p>
+          </div>
+        </div>
+        <!-- Construção de uma 'div', ocupando 50% da largura total disponibilizada -->
+        <div class="col-md-6 col-sm-6">
+          <div class="block about-image"> 
+            <!-- Adição de uma imagem meramente representativa -->
+            <img src="./images/about.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'custom-section', que apresenta as experiências -->
+  <section class="custom-section" id="experience">
+    <div class="container">
+      <!-- Construção de uma nova 'div', que irá conter o título da seção -->
+      <div class="section-heading">
+        <h1 class="title">Minhas experiências</h1>
+      </div>
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro através da classe 'row' -->
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência profissional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de emprego -->
+              <div class="icon">
+                <img src="./images/icons/job.png" class="img-fluid" style="max-width: 44px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre o emprego, como posição, empresa e período trabalhado -->
+            <div class="media-body">
+              <h4 class="media-heading">Técnico em Eletrônica</h4>
+              <p>Perto S.A</p>
+              <p>Junho de 2008 - Julho de 2012</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência profissional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de emprego -->
+              <div class="icon">
+                <img src="./images/icons/job.png" class="img-fluid" style="max-width: 44px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre o emprego, como posição, empresa e período trabalhado -->
+            <div class="media-body">
+              <h4 class="media-heading">Técnico em Eletrônica</h4>
+              <p>Bextra Balanças</p>
+              <p>Outubro de 2012 - Janeiro de 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência profissional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de emprego -->
+              <div class="icon">
+                <img src="./images/icons/job.png" class="img-fluid" style="max-width: 44px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre o emprego, como posição, empresa e período trabalhado -->
+            <div class="media-body">
+              <h4 class="media-heading">Analista de Suporte Técnico N1</h4>
+              <p>King Host</p>
+              <p>Agosto 2022 - Atual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'custom-section', que apresenta as escolaridades -->
+  <section class="custom-section" id="education">
+    <div class="container">
+      <!-- Construção de uma nova 'div', que irá conter o título da seção -->
+      <div class="section-heading">
+        <h1 class="title">Educação</h1>
+      </div>
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro através da classe 'row' -->
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência educacional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de educação -->
+              <div class="icon">
+                <img src="./images/icons/education.png" class="img-fluid" style="max-width: 48px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre a escolaridade, como escola e período estudado -->
+            <div class="media-body">
+              <h4 class="media-heading">Ensino Médio</h4>
+              <p>Bradesco - Gravataí/RS</p>
+              <p>2006 - 2008</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência educacional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de educação -->
+              <div class="icon">
+                <img src="./images/icons/education.png" class="img-fluid" style="max-width: 48px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre a escolaridade, como escola e período estudado -->
+            <div class="media-body">
+              <h4 class="media-heading">Técnico em Eletrônica</h4>
+              <p>Bradesco - Gravataí/RS</p>
+              <p>2009 - 2010</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter uma experiência educacional -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de educação -->
+              <div class="icon">
+                <img src="./images/icons/education.png" class="img-fluid" style="max-width: 48px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre a escolaridade, como escola e período estudado -->
+            <div class="media-body">
+              <h4 class="media-heading">Análise e Desenvolvimento de Sistemas</h4>
+              <p>Uninter - EAD</p>
+              <p>2021 - Atual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'custom-section', que apresenta os idiomas  -->
+  <section class="custom-section" id="languages">
+    <div class="container">
+      <!-- Construção de uma nova 'div', que irá conter o título da seção -->
+      <div class="section-heading">
+        <h1 class="title">Idiomas</h1>
+      </div>
+      <!-- Construção de uma 'div', mantendo os elementos um ao lado do outro através da classe 'row' -->
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter um idioma -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de idioma -->
+              <div class="icon">
+                <img src="./images/icons/languages.png" class="img-fluid" style="max-width: 48px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre o idioma e seu nível de conhecimento -->
+            <div class="media-body">
+              <h4 class="media-heading">Português</h4>
+              <p>Nativo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <!-- Container que irá conter um idioma -->
+          <div class="media d-flex flex-column align-items-sm-start align-items-center">
+            <div class="media-left">
+              <!-- Container que irá conter um ícone representativo de idioma -->
+              <div class="icon">
+                <img src="./images/icons/languages.png" class="img-fluid" style="max-width: 48px;"/>
+              </div>
+            </div>
+            <!-- Container que irá conter mais informações sobre o idioma e seu nível de conhecimento -->
+            <div class="media-body">
+              <h4 class="media-heading">Inglês</h4>
+              <p>Iniciante</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'section' e 'position-relative', que apresenta alguns 'links' de projetos pessoais -->
+  <section class="section position-relative" id="portfolio">
+    <div class="container section-heading">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 text-center">
+          <!-- Tag de heading (titulo) centralizada na página -->
+          <h1 class="title">Portfólio</h1>
+          <!-- Tag de heading (subtitulo) centralizada na página -->
+          <h5>Segue alguns websites realizados por mim:</h5>
+        </div>
+        <div class="col-lg-12">
+          <!-- Lista de links -->
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/formulario-html-css/">Formulário Desenvolvedor</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/formularioresponsivo/">Login de Site</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/spotify/">Clone Spotify</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/itsegurancas">IT Segurança</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/disneyplus/">Clone Disney Plus</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/bikcraft/">Projeto Bikcraft</a></h5>
+          <h5><a target="_blank" href="https://jeferson-nt.github.io/doctorcare/">Projeto DoctorCare</a></h5>
+          <h5>Acesse meu github para ver mais alguns de meus projetos e estudos: <a href="https://github.com/jeferson-nt?tab=repositories">GitHub</a></h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Construção de uma nova seção com a classe 'contact', que exibe uma forma de contato -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <!-- Construção de uma div', mantendo os elementos um ao lado do outro através da classe 'row' -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Construção de uma 'div', adicionando a classe 'block' a ela -->
+          <div class="block">
+            <!-- Tag de heading (subtitulo) -->
+            <h2 class="title">Gostaria de entrar em contato?</h2>
+            <!-- Tag de texto (paragráfo) -->
+            <p class="display-5">Entre em contato pelo formulário abaixo:</p>
+            <div class="contact-form">
+              <!-- Construção de um form, responsável por coletar os dados solicitados -->
+              <form id="contact-form" method="#" action="#" role="form">
+                <div class="form-group">
+                  <!-- Input para preenchimento do nome -->
+                  <input type="text" placeholder="Seu nome" class="form-control" name="name" id="name">
+                </div>
+                <div class="form-group">
+                  <!-- Input para preenchimento do email -->
+                  <input type="email" placeholder="Seu email" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group">
+                  <!-- Input para preenchimento do assunto -->
+                  <input type="text" placeholder="Assunto" class="form-control" name="subject" id="subject">
+                </div>
+                <div class="form-group">
+                  <!-- Input para preenchimento de informações complementares -->
+                  <textarea rows="6" placeholder="Mensagem" class="form-control" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" id="contact-submit" class="btn btn-default btn-send">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer da aplicação, que adiciona o Copyright ao site, de forma centralizada -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row content-justify-between">
+        <div class="col-12 text-center text-lg-left text-md-left">
+          <p class="copyright">Copyright 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importação dos arquivos de javascript próprios e de terceiros -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+/* Definição de variavéis para cores */
+:root {
+  --white: #FFFFFF;
+  --white-100: #DEDEDE;
+
+  --black: #000000;
+  --blue-500: #0047AB;
+  --blue-700: #191970;
+
+  --gray-50: #CCCCCC;
+  --gray-500 :#777777;
+  --gray-550: #555555;
+  --gray-600: #727272;
+  --gray-650: #666666;
+  --gray-700: #444444;
+  --gray-750: #414141;
+  --gray-800: #333333;
+  --gray-900: #222222;
+} 
+
+/* Definição de estilização geral */
+body {
+  overflow-x: hidden;
+  background: var(--white);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Definição de font-family para as tags heading */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Definição de font-family para as tags heading */
+h2 {
+  font-size: 26px;
+}
+
+/* Definição estilização para o(s) paragráfo(s) */
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* Remoção espaçamento lateral esquerdo de listas */
+ul {
+  padding-left: 0;
+}
+
+/* Remoção bullets de posicionamento de uma lista */
+ul li {
+  list-style: none;
+}
+
+/* Remoção o sublinhado de links no evento de hover */
+a:hover {
+  text-decoration: none;
+}
+
+/* Adição de espaçamento inferior e centralização de texto */
+.section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/* Customização do(s) paragráfo(s) presente em '.section-heading' */
+.section-heading p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--gray-600);
+}
+
+/* Customização de '.title', alterando principal os estilos de palavras e/ou sentenças */
+.title {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: var(--gray-800);
+  text-transform: uppercase;
+}
+
+/* Customização de '.subtitle', alterando principal os estilos de palavras e/ou sentenças */
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+/* Customização de '.subtitle-des', alterando principal os estilos de palavras e/ou sentenças */
+.subtitle-des {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: var(--gray-600);
+}
+
+/* Adição de espaçamentos para '.pages' */
+.pages {
+  padding: 80px 0 40px;
+}
+
+/* Adição de espaçamento superior e inferior para '.moduler' */
+.moduler {
+  padding: 140px 0;
+}
+
+/* Adição de espaçamento superior e inferior para '.works-fit' */
+.works-fit {
+  padding: 40px 0;
+}
+
+/* Posicionamento esquerdo de '.buttons' */
+.works-fit figure .buttons {
+  left: 14%;
+}
+
+/* Adição de espaçamento superior de 80px para '.company-description' */
+.company-description {
+  margin-top: 80px;
+}
+
+/* Redefinição de espaçamento superior para o heading 'h3' */
+.company-description .block h3 {
+  margin-top: 0;
+}
+
+/* Redefinição de espaçamento superior para o heading 'h3' */
+.company-description .block p {
+  color: var(--gray-600);
+}
+
+/* Customizações gerais para '.top-bar' */
+.top-bar {
+  width: 100vw;
+  position: fixed;
+  color: var(--white);
+  background: var(--white);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--white-100);
+  transition: all 0.2s ease-out 0s;
+  padding: 15px 0;
+  z-index: 10;
+  top: 0;
+}
+
+/* Definições de estilo para '.animated-header' */
+.top-bar.animated-header {
+  padding: 20px 0;
+  background: var(--white);
+  box-shadow: none;
+}
+
+/* Reset de propriedades para '.navbar' */
+.navbar {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Adição de cor de fundo para branco, conforme definição de variáveis desse escopo */
+.navbar.bg-light {
+  background: var(--white) !important;
+}
+
+/* Customização dos links do menu flutuante */
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s all;
+  color: var(--gray-700) !important;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  display: block;
+}
+
+/* Alteração de cor dos links do menu flutuante no evento de hover */
+.navbar .nav-item .nav-link:hover {
+  color: var(--blue-700) !important;
+}
+
+/* Remoção de espaçamento direito dos links do menu flutuante */
+.navbar .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+/* Definição de estilos da área de apresentação da aplicação */
+.hero-area {
+  background: url("../images/background.jpg") no-repeat 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--white);
+
+  padding: 230px 0;
+  position: relative;
+  padding-bottom: 160px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Definição de estilos para um pseudo-elemento da área de apresentação da aplicação */
+.hero-area:before {
+  z-index: 9;
+  content: "";
+  background: rgba(255, 255, 255, 0.78);
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+/* Definição de posicionamento para '.block' */
+.hero-area .block {
+  position: relative;
+  z-index: 9;
+}
+
+/* Customização do heading 'h1' de '.hero-area' */
+.hero-area h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--gray-800);
+  text-transform: uppercase;
+}
+
+/* Customização do heading 'h2' de '.hero-area' */
+.hero-area h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 25px;
+  line-height: 27px;
+  margin-bottom: 38px;
+  color: var(--gray-650);
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Definição de espaçamento para '.about' */
+.about {
+  padding: 110px 0;
+  padding-bottom: 80px;
+}
+
+/* Definição do tipo de display utilizado em '.block' */
+.about .block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px 0 30px;
+}
+
+/* Customização do heading 'h2' de '.block' */
+.about .block h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Customização do(s) paragráfo(s) presente em '.about' */
+.about .block p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 35px;
+  color: var(--gray-600);
+}
+
+/* Definição de espaçamento superior em 50px */
+.about-feature {
+  margin-top: 50px;
+}
+
+/* Definição de espaçamento, cor e posicionamento para '.about-feature' */
+.about-feature .block {
+  color: var(--white);
+  padding: 85px 65px;
+  float: left;
+}
+
+/* Customização do(s) paragráfo(s) presente em '.about-feature' */
+.about-feature .block p {
+  font-weight: 300;
+}
+
+/* Adição de cor de fundo, conforme definição de variáveis desse escopo */
+.about-feature .about-feature-1 {
+  background: var(--blue-700);
+}
+
+/* Adição de cor de fundo para branco, conforme definição de variáveis desse escopo */
+.about-feature .about-feature-2,
+.about-feature .about-feature-3 {
+  background: var(--blue-500);
+}
+
+/* Definição de posicionamento do contéudo de '.collapse' */
+.collapse {
+  justify-content: flex-end;
+}
+
+/* Definição de largura máxima para uma imagem */
+.about-image img {
+  max-width: 500px;
+}
+
+/* Definição de espaçamento para '.custom-section' */
+.custom-section {
+  padding: 80px 0;
+  padding-top: 0px;
+}
+
+/* Definição de espaçamento para '.media' */
+.custom-section .media {
+  margin: 0px 0 70px 0;
+}
+
+/* Adição de espaçamento superior de 16px para '.media-body' */
+.custom-section .media-body {
+  margin-top: 16px;
+}
+
+/* Adição de espaçamento lateral direito de 25px para '.media-left' */
+.custom-section .media .media-left {
+  padding-right: 25px;
+}
+
+/* Customização do heading 'h2' de '.custom-section' */
+.custom-section h3 {
+  font-size: 18px;
+  text-align: center;
+  color: var(--gray-900);
+  text-transform: uppercase;
+  margin: 0px 0px 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Customização do(s) paragráfo(s) presente em '.custom-section' */
+.custom-section p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  color: var(--gray-500);
+}
+
+/* Customização do elemento '.icon' presente em '.custom-section' */
+.custom-section .icon {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: var(--white);
+  background-color: var(--blue-700);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 50px;
+}
+
+/* Customização para a área de contato */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+  background: var(--blue-700);
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--white);
+  position: relative;
+}
+
+/* Definição de estilo para '.block', como posicionamento e cor */
+.contact .block {
+  z-index: 9;
+  position: relative;
+  color: var(--white);
+}
+
+/* Customização do heading 'h2' de '.block' */
+.contact .block h2 {
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+/* Customização do(s) paragráfo(s) presente em '.section-heading' */
+.contact .block p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Adição de espaçamentos verticais para '.contact-form' */
+.contact-form {
+  padding: 40px 0;
+}
+
+/* Customização dos campos 'input' em '.contact-form' */
+.contact-form input {
+  display: block;
+  font-size: 13px;
+  box-shadow: none;
+  padding: 6px 12px;
+  background-image: none;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-color: var(--white);
+  border: 1px solid (--gray-50);
+  line-height: 1.428571429;
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* Customização dos campos 'textarea' em '.contact-form' */
+.contact-form textarea {
+  display: block;
+  font-size: 14px;
+  border-radius: 0;
+  padding: 6px 12px;
+  color: var(--gray-550);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-color: var(--white);
+  border: 1px solid (--gray-50);
+  line-height: 1.42857143;
+  background-image: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+/* Adição de espaçamentos superior quando um elemento for precedido de outro */
+.form-group + .form-group {
+  margin-top: 12px;
+}
+
+/* Customização do botão do formulário */
+.btn-send {
+  outline: none;
+  border-radius: 0;
+  margin-top: 12px;
+  color: var(--blue-700);
+  transition: all linear 0.2s;
+  border-color: var(--blue-700);
+  background-color: var(--white);
+}
+
+/* Customização de '.footer' da aplicação */
+.footer {
+  padding: 10px 0;
+  color: var(--gray-550);
+  background: var(--white);
+}
+
+/* Customização de '.copyrigth' da aplicação */
+.footer .copyright {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* Estilizações para dispositivos com largura menor que 768px */
+@media (max-width: 992px) {
+  /* Adição de espaçamento superior do menu flutuante */
+  .navbar .navbar-nav {
+    padding-top: 15px;
+  }
+
+  /* Remoção de espaçamento direito dos links do menu flutuante */
+  .navbar .nav-item .nav-link {
+    padding-right: 0;
+  }
+}
+
+/* Estilizações para dispositivos com largura menor que 576px */
+@media (max-width: 576px) {
+  /* Remoção de espaçamento direito dos icones */
+  .custom-section .media .media-left {
+    padding-right: 0;
+  }
+}
